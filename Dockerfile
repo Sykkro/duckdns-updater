@@ -1,6 +1,9 @@
 
-FROM --platform=$BUILDPLATFORM alpine:3.12
+FROM --platform=$BUILDPLATFORM alpine:3.12 AS build
+ARG TARGETPLATFORM
+ARG BUILDPLATFORM
 
+FROM alpine:3.12
 RUN apk add --no-cache curl
 RUN apk add --no-cache bind-tools
 
