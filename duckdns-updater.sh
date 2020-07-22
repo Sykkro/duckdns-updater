@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 : ${DUCK_ENV_DOMAINS?"Need to set DUCK_ENV_DOMAINS"}
 : ${DUCK_ENV_TOKEN?"Need to set DUCK_ENV_TOKEN"}
