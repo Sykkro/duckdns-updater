@@ -21,7 +21,7 @@ Multiarch alpine-based image that updates a configured DuckDNS at a fixed interv
 
 ```bash
 docker buildx build \
---platform=linux/amd64,linux/arm/v5,linux/arm/v6,linux/arm/v7,linux/arm64 \
+--platform=linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64 \
 --output "type=image,push=false" \
 -t sykkro/duckdns-updater:latest .
 ```
