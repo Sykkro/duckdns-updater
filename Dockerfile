@@ -6,5 +6,4 @@ RUN apk add --no-cache bind-tools
 
 COPY duckdns-updater.sh /duckdns-updater.sh
 RUN chmod +x /duckdns-updater.sh
-CMD /duckdns-updater.sh
 ENTRYPOINT ["/duckdns-updater.sh"]
